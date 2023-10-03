@@ -214,9 +214,9 @@ fn main() {
     }
 
     let socket = UdpSocket::bind("0.0.0.0:5555").unwrap();
-    socket
-        .set_read_timeout(Some(Duration::from_secs(5)))
-        .unwrap();
+    //    socket
+    //        .set_read_timeout(Some(Duration::from_secs(5)))
+    //        .unwrap();
 
     println!("Enter the devices in the following format: <device #>:<device name>,:");
     let mut line = String::new();
